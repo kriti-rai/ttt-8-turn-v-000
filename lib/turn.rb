@@ -40,6 +40,7 @@ def turn(board)
   while valid_move?(board,index) == true
     move(board,index,value = "X")
     break
+  turn(board)
   end
 end
 
